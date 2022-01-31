@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variabile
-OS=`cat /etc/os-release | grep -w "NAME" | awk -F"=" '{print $2} | tr -d \"'`
+OS=`cat /etc/os-release | grep -w "NAME" | awk -F"=" '{print $2}' | tr -d \"`
 
 # Main
 echo "Suntem pe: $OS"

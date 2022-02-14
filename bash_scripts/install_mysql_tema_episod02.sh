@@ -8,7 +8,7 @@ LOG_LOCATION="$LOG_DIR/$LOG_NAME.log"                                         # 
 
 # Main
 
-# Verif daca sceriptul este rulat cu parametru sau nu
+# Verif daca scriptul este rulat cu parametru sau nu
 if [ $# == 0 ]
 then
   echo "ERROR - You must run this script with a parameter!"

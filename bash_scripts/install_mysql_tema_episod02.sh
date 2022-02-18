@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#########################
+# Error codes:          #
+# 3 - Missing parameter #
+#########################
+
 # Variabile
 OS=`cat /etc/os-release | grep -w "NAME" | awk -F"=" '{print $2}' | tr -d \"` # extragem sistemul de operare
 LOG_DIR="/tmp"                                                                # folderul fisierului de log
@@ -14,7 +19,7 @@ then
   echo "ERROR - You must run this script with a parameter!"
   echo "./install_mysql.sh [LOG_NAME]"
   echo "Example: ./install_mysql.sh COCINA"
-  exit 1
+  exit 3
 fi
 
 # Daca folderul de log nu exista, il cream
